@@ -1,8 +1,16 @@
 # Stock-csv-exporter
 
-This is a selection of different python projects I've made, illustrating the skills in Python that I have.
+Proof of concept stock CSV exporter (from Yahoo Finance), using the pandas-datareader, datetime, and tkinter libraries
 
-Editors used:
-Visual Studio Code 
+Features:
+*Ability to set start and end dates for stock data export
+*Ability to queue up multiple stocks into a viewable list
+*Automatically capitalizes the stock names for visual clarity
+*Add/Remove functionality (with keyboard shortcuts)
+*Generates CSV files in the same directory as the .py file, info taken from Yahoo Finance, one file is generated per stock
+*"Today's Date" button auto-populated the End Date field with today's date
+*GUI interface made with tkinter makes it easy to use
 
-Jupyter Notebook
+Room to grow:
+*Add bug-catchers (try/except statements to stop datareader issues, such as end date being before start date, stock misspellings, etc)
+*Add other data sources
